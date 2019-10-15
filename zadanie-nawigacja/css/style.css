@@ -1,0 +1,32 @@
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.background {
+    width: 30%;
+    height: 400px;
+    background-image: url(https://planetagracza.pl/wp-content/uploads/2019/03/Geralt_henry_cavill-800x445.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.mask {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.4s ease-in;
+}
+
+p {
+    margin: 0;
+    line-height: 400px;
+}
+
+.mask:hover {
+    opacity: 1;
+}
+
+

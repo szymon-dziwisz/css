@@ -1,0 +1,33 @@
+.kw {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    transition: all ease-in 1s;
+}
+
+.kwadrat1 {
+    background-color: red;
+}
+
+.kwadrat2 {
+    background-color: blue;
+}
+
+.kwadrat3 {
+    background-color:green;
+}
+
+.kwadrat1:hover {
+    height: 300px;
+}
+
+.kwadrat2:hover {
+    width: 300px;
+}
+
+.kwadrat3:hover {
+    height: 300px;
+    width: 300px;
+}

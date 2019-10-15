@@ -1,0 +1,9 @@
+.backgraund {
+    height: 300px;
+    width: 30%;
+    /* background-image: url(https://www.foto-net.pl/sklep/obrazki/tlo_fotograficzne_gnieciuch_26x3m_kolor_a62446_dcb8d5_18410130543.jpg); */
+background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.8)), url(https://www.foto-net.pl/sklep/obrazki/tlo_fotograficzne_gnieciuch_26x3m_kolor_a62446_dcb8d5_18410130543.jpg);
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+}
