@@ -1,0 +1,151 @@
+.overflow {
+    height: 50px;
+    border: 1px dashed black;
+    overflow: auto;
+}
+
+.overflow > p {
+    margin-top: ;
+}
+
+.box-sizing {
+    height: 40px;
+    border: 1px solid #000;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.rotacja {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    transition: all 1s;
+    transform-origin: 100% 100%;
+
+}
+
+.rotacja:hover {
+    transform: rotate(1440deg);
+}
+
+.parent {
+    height: 400px;
+    width: 400px;
+    position: relative;
+    border: 1px solid green;
+}
+
+.child {
+    height: 50%;
+    width: 50%;
+    border: 1px solid red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.scale {
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+}
+.scale img {
+    transition: all 1s;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.scale img:hover {
+    transform: scale(1.5)
+}
+
+.animation {
+    background-image: url(https://d2skuhm0vrry40.cloudfront.net/2019/articles/2019-10-12-12-56/wiedzmin_3_cavill.jpg/EG11/thumbnail/750x422/format/jpg/quality/60>
+    );
+    height: 300px;
+    animation-name: resize;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes resize {
+    0% {
+        width: 100%;
+    }
+    50% {
+        width: 50%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.kontener {
+    display: flex;
+    flex-direction: row;
+    /* flex-direction domynie jest w opcji row - jeden obok drugiego; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 500px;
+    align-items: space-around;
+}
+
+.dziecko-kontenera {
+    flex-basis: 30%;
+    height: 100px;
+    background-image: url(https://d2skuhm0vrry40.cloudfront.net/2019/articles/2019-10-12-12-56/wiedzmin_3_cavill.jpg/EG11/thumbnail/750x422/format/jpg/quality/60);
+}
+
+.dziecko-kontenera:nth-of-type(2){
+    align-self: flex-end;
+}
+
+.order {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.order .fifty,
+.order .img {
+flex-basis: 50%;
+}
+
+.order .img img {
+    width: 100%;
+}
+
+@media all and (max-width: 768px) {
+    .order .fifty,
+    .order .img {
+        flex-basis: 100%;
+    }
+
+    .order :first-child {
+        order: 1;
+    }
+
+    .order :nth-of-type(2) {
+        order: 2;
+    }
+
+    .order :nth-of-type(3) {
+        order: 4;
+    }
+
+    .order :nth-of-type(4) {
+        order: 3;
+    }
+
+    .order :nth-of-type(5) {
+        order: 5;
+    }
+
+    .order :nth-of-type(6) {
+        order: 6;
+    }
+}
